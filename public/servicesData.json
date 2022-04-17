@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1, 
+        "name": "Muscle Build",
+        "img": "./images/photo1.png",
+        "price": "$50",
+        "description": "Build your body muscle in 8 weeks"
+    },
+    {
+        "id": 2, 
+        "name": "Weight Lose",
+        "img": "./images/photo1.png",
+        "price": "$100",
+        "description": "Build your body muscle in 8 weeks"
+    },
+    {
+        "id": 3, 
+        "name": "Body Fitness",
+        "img": "./images/photo1.png",
+        "price": "$250",
+        "description": "Build your body muscle in 8 weeks"
+    },
+    {
+        "id": 4, 
+        "name": "Muscle Build",
+        "img": "./images/photo1.png",
+        "price": "$500",
+        "description": "Build your body muscle in 8 weeks"
+    },
+    {
+        "id": 5, 
+        "name": "Muscle Build",
+        "img": "./images/photo1.png",
+        "price": "$150",
+        "description": "Build your body muscle in 8 weeks"
+    },
+    {
+        "id": 6, 
+        "name": "Muscle Build",
+        "img": "./images/photo1.png",
+        "price": "$350",
+        "description": "Build your body muscle in 8 weeks"
+    }
+]

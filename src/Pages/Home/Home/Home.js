@@ -1,11 +1,13 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import Services from '../Services/Services';
+
 
 const Home = () => {
     return (
         <div>
             <Banner />
-            <h2 className='text-danger'>this is home</h2>
+            <Services />
         </div>
     );
 };
