@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 // import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
@@ -14,6 +15,7 @@ const Register = () => {
     const [agree, setAgree] = useState(false);
   
     const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [sendEmailVerification] = useSendEmailVerification(auth);
 
     const handleEmailBlur = event => {
         setEmail(event.target.value)
@@ -44,13 +46,12 @@ const Register = () => {
     // on submit
     const handleCreateUser = (e) =>{
         e.preventDefault();
-       
-
         createUserWithEmailAndPassword(email, password)
+        sendEmailVerification(email);
     }
 
     return (
-        <div style={{ height: '60vh' }} className="w-50 container mx-auto">
+        <div style={{ height: '100vh' }} className="w-50 container mx-auto">
             <h2 className='text-primary mt-3 text-center'>Register Now</h2>
             <Form onSubmit={handleCreateUser}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -74,6 +75,7 @@ const Register = () => {
                 </Button>
             </Form>
             <p>Already have an acocunt? <Link className='text-decoration-none text-primary' to={'/login'}>Please Login</Link></p>
+            <SocialLogin />
         </div>
     );
 };
