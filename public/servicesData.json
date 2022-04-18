@@ -2,43 +2,43 @@
     {
         "id": 1, 
         "name": "Muscle Build",
-        "img": "./images/photo1.png",
+        "img": "./images/photo2.jpg",
         "price": "$50",
         "description": "Build your body muscle in 8 weeks"
     },
     {
         "id": 2, 
         "name": "Weight Lose",
-        "img": "./images/photo1.png",
+        "img": "./images/photo3.jpg",
         "price": "$100",
-        "description": "Build your body muscle in 8 weeks"
+        "description": "To stay healthy you can lose your extra weight with me"
     },
     {
         "id": 3, 
         "name": "Body Fitness",
-        "img": "./images/photo1.png",
+        "img": "./images/photo4.jpg",
         "price": "$250",
-        "description": "Build your body muscle in 8 weeks"
+        "description": "Workout smartly to increase your body fitness. "
     },
     {
         "id": 4, 
-        "name": "Muscle Build",
+        "name": "Weight Lifting",
         "img": "./images/photo1.png",
         "price": "$500",
-        "description": "Build your body muscle in 8 weeks"
+        "description": "If you want to be a weight lifter then you came to the right place. Be a weight lifter"
     },
     {
         "id": 5, 
-        "name": "Muscle Build",
-        "img": "./images/photo1.png",
+        "name": "Strength Building",
+        "img": "./images/photo5.jpg",
         "price": "$150",
-        "description": "Build your body muscle in 8 weeks"
+        "description": "Build your body strenght within 10 weeks."
     },
     {
         "id": 6, 
-        "name": "Muscle Build",
-        "img": "./images/photo1.png",
+        "name": "Flexibility",
+        "img": "./images/photo6.jpg",
         "price": "$350",
-        "description": "Build your body muscle in 8 weeks"
+        "description": "Flexible your body strenghten your body fitness"
     }
 ]

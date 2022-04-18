@@ -12,15 +12,15 @@ const Service = ({service}) => {
     return (
         <>
             <Col>
-                <Card className='card-style' style={{ width: '20rem' }}>
-                    <Card.Img variant="top" src={img} />
+                <Card className='card-style ' style={{ width: '20rem', height:'28rem', position:'relative' }}>
+                    <Card.Img variant="top" height={200} src={img} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>Price: {price}/month</Card.Text>
                         <Card.Text>
                             {description}
                         </Card.Text>
-                        <Button onClick={() => navigateToDetail(id)} variant="primary">Buy this</Button>
+                        <Button onClick={() => navigateToDetail(id)} variant="primary" style={{position: 'absolute', bottom:"5px", right:'30%'}}>Buy this</Button>
                     </Card.Body>
                 </Card>
             </Col>

@@ -10,39 +10,39 @@ const Banner = () => {
         <div className='banner'>
             <Carousel>
         <Carousel.Item>
-          <img height={550} width={500}
+          <img height={500} width={500}
             className="d-block w-100"
             src={photo1}
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Build Your Muscle</h3>
+            <p>Build your muscle here within 14 weeks</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img height={550} width={500}
+          <img height={500} width={500}
             className="d-block w-100"
             src={photo2}
             alt="Second slide"
           />
   
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Weight Lose</h3>
+            <p>Lose your extra weight. Start this journey with me.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img height={550} width={500}
+          <img height={500} width={500}
             className="d-block w-100"
             src={photo3}
             alt="Third slide"
           />
   
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Build Your Strenght</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Increse your strength. To start this journey buy this service.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
