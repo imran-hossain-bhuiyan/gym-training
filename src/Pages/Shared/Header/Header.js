@@ -15,10 +15,6 @@ const Header = () => {
     //         color: isActive ? 'blue' : "black",
     //     }
     // }
-
-    const handleSignOut = () =>{
-        signOut(auth);
-    }
     return (
         <>
             <Navbar className='nav-bar' sticky='top' collapseOnSelect expand="lg"  >
@@ -34,7 +30,7 @@ const Header = () => {
                             {
                                 user
                                     ?
-                                    <Nav.Link onClick={handleSignOut} className='text-primary' as={Link} to="/signout">SignOut</Nav.Link>
+                                    <Nav.Link onClick={() => signOut(auth)} className='text-primary'>SignOut</Nav.Link>
                                     :
                                     <Nav.Link className='text-primary' as={Link} to="/login">Log In</Nav.Link>
                             }

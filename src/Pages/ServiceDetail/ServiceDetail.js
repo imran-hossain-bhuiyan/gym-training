@@ -5,8 +5,6 @@ import './ServiceDetail.css';
 const ServiceDetail = () => {
     const {serviceId} = useParams()
  
-    
-    
 return (
         <>
              <h2>Welcome to detail page no {serviceId}</h2>

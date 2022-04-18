@@ -11,6 +11,7 @@ import AboutMe from './Pages/AboutMe/AboutMe';
 import Register from './Pages/Login/Register/Register';
 import Blogs from './Pages/Blogs/Blogs';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
-        <Route path='/service/:serviceId' element={<Home />}></Route>
+        <Route path='/service/:serviceId' element={<ServiceDetail />}></Route>
         <Route path="/checkout" element={
           <RequireAuth>
             <CheckOut />
