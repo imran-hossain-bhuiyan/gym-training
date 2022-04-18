@@ -1,3 +1,4 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -9,10 +10,14 @@ import './Header.css';
 
 const Header = () => {
     const [user] = useAuthState(auth);
-    const navStyle = ({ isActive }) => {
-        return {
-            color: isActive ? 'blue' : "black",
-        }
+    // const navStyle = ({ isActive }) => {
+    //     return {
+    //         color: isActive ? 'blue' : "black",
+    //     }
+    // }
+
+    const handleSignOut = () =>{
+        signOut(auth);
     }
     return (
         <>
@@ -29,7 +34,7 @@ const Header = () => {
                             {
                                 user
                                     ?
-                                    <Nav.Link className='text-primary' as={Link} to="/signout">SignOut</Nav.Link>
+                                    <Nav.Link onClick={handleSignOut} className='text-primary' as={Link} to="/signout">SignOut</Nav.Link>
                                     :
                                     <Nav.Link className='text-primary' as={Link} to="/login">Log In</Nav.Link>
                             }
